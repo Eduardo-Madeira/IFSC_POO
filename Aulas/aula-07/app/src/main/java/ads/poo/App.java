@@ -6,49 +6,56 @@ package ads.poo;
 public class App {
 
     public static void main(String[] args) {
-        Buzz b = new Buzz();
+        // Buzz b = new Buzz();
 
-        System.out.println(b.dispararLaser());
+        // System.out.println(b.dispararLaser());
+        // System.out.println(" ");
+
+        // System.out.println(b.golpear());
+        // System.out.println(" ");
+
+        // System.out.println(b.fraseAleatoria());
+        // System.out.println(" ");
+
+        // System.out.println("Capacete aberto? " + b.isCapaceteAberto());
+        // b.acaoCapacete();
+        // System.out.println("Capacete aberto? " + b.isCapaceteAberto());
+        // System.out.println(" ");
+
+        // System.out.println("Asa aberta? " + b.isAsaAberto());
+        // System.out.println(" ");
+        // b.acaoAsa();
+        // System.out.println("Asa aberta? " + b.isAsaAberto());
+        // System.out.println(" ");
+
+        Caneta bic = new Caneta("Preta", 100);
+
+        Caneta faber = new Caneta("Preta");
+
+        System.out.println(bic);
+        System.out.println(faber);
+        System.out.println(bic.desenhar());
         System.out.println(" ");
 
-        System.out.println(b.golpear());
-        System.out.println(" ");
+        // System.out.println(c.getCor());
+        // System.out.println(" ");
+        // System.out.println(c.getTinta());
+        // System.out.println(" ");
+        // System.out.println(c.desenhar());
+        // System.out.println(" ");
 
-        System.out.println(b.fraseAleatoria());
-        System.out.println(" ");
 
-        System.out.println("Capacete aberto? " + b.isCapaceteAberto());
-        b.acaoCapacete();
-        System.out.println("Capacete aberto? " + b.isCapaceteAberto());
-        System.out.println(" ");
+        // Pessoa juca = new Pessoa(); Não existe pois esta na Classe Pessoa.java
 
-        System.out.println("Asa aberta? " + b.isAsaAberto());
-        System.out.println(" ");
-        b.acaoAsa();
-        System.out.println("Asa aberta? " + b.isAsaAberto());
-        System.out.println(" ");
+        // juca.setNome("Juca");
+        // juca.setCpf("000.000.000-00");
+        // juca.setEmail("juca@exemple.org");
+        
+        // System.out.println(juca);
 
-        Caneta c = new Caneta();
+        // Fazer deste modo:
 
-        System.out.println(c.desenhar());
-        System.out.println(" ");
-
-        c.setCor("Azul");
-        c.setTinta(1);
-
-        System.out.println(c.getCor());
-        System.out.println(" ");
-        System.out.println(c.getTinta());
-        System.out.println(" ");
-        System.out.println(c.desenhar());
-        System.out.println(" ");
-
-        Pessoa juca = new Pessoa();
-
-        juca.setNome("Juca");
-        juca.setCpf("000.000.000-00");
-        juca.setEmail("juca@exemple.org");
-
-        System.out.println(juca);
+        // Pessoa p = new Pessoa("Juca", "123.456.789.00", "juca@example.org");
+        
     }
 }
