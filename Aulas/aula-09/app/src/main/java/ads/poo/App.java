@@ -63,7 +63,7 @@ public class App {
         }
     }
     
-    // Método para editar o Aluno
+    // Menu para editar o Aluno
     private void editar(){
         System.out.print("Entre com a matricula do Aluno que deseja: ");
         String matricula = teclado.nextLine();
@@ -160,6 +160,9 @@ public class App {
 
     // Método para listar todos os alunos
     private void listarTodos(){
+        // this.bancoDeDados.forEach((chave, valor)->{
+            // System.out.println("Nome: " + valor.getNome() + );
+        // });
         System.out.println(this.bancoDeDados);
     }
         
@@ -180,6 +183,8 @@ public class App {
             default -> System.out.println("Opção invalida");
             }
         } while (opcao!=6);
+
+        
     }
 }
         
