@@ -3,7 +3,7 @@ package ads.poo;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class AppLivraria {
+public class App {
     
     public static void main(String[] args) {
         
