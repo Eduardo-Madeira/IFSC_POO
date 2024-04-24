@@ -43,7 +43,16 @@ public class Livro {
     
     @Override
     public String toString() {
-        return "Livro [titulo=" + titulo + ", preco=" + preco + ", autores=" + autores + ", isbn=" + isbn + "]";
+        StringBuilder sb = new StringBuilder();
+        for (Autor autor : this.autores){
+            sb.append(autor);
+        }
+
+        return String.format("ISBN= %s, Titulo= %s, Preco= d, Autores= /n%ss", isbn, titulo, preco, autores, sb);
+    }
+
+    public boolean addAutor(Autor a){
+        return this.autores.add(a);
     }
 
 }

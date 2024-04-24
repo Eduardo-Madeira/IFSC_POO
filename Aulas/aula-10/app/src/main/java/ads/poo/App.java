@@ -14,18 +14,24 @@ public class App {
         autores.add(new Autor("Eduardo", "Brasileiro"));
         autores.add(new Autor("Machado de Assis", "Brasileiro"));
 
-        Livro livro1 = new Livro("Memórias Póstumas de Brás Cubas", 40.00, autores, "1231231231231");
-        if (!bancoDeDados.containsKey(livro1.getIsbn())){
-            bancoDeDados.put(livro1.getIsbn(), livro1);
+        Livro memoriaPostuma = new Livro("Memórias Póstumas de Brás Cubas", 40.00, autores, "100");
+        if (!bancoDeDados.containsKey(memoriaPostuma.getIsbn())){
+            bancoDeDados.put(memoriaPostuma.getIsbn(), memoriaPostuma);
         } else{
             System.out.println("Já existe um livro cadastrado");
         }
 
-        Livro livro2 = new Livro("Moby Dick", 20.00, autores, "1122334455667");
-        if (!bancoDeDados.containsKey(livro2.getIsbn())){
-            bancoDeDados.put(livro2.getIsbn(), livro2);
+        Livro mobyDick = new Livro("Moby Dick", 20.00, autores, "101");
+        if (!bancoDeDados.containsKey(mobyDick.getIsbn())){
+            bancoDeDados.put(mobyDick.getIsbn(), mobyDick);
         } else{
             System.out.println("Já existe um livro cadastrado");
+        }
+
+        Livro l = bancoDeDados.get("100");
+        if (l != null){
+            Autor outro = new Autor("Outro", "ARG");
+            l.addAutor(outro);
         }
 
         bancoDeDados.forEach((chave, valor)->{

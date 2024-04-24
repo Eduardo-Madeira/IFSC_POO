@@ -6,7 +6,7 @@ public class Autor {
     
     @Override
     public String toString() {
-        return "Autor [nome=" + nome + ", nascionalidade=" + nascionalidade + "]";
+        return String.format("Nome= %s, Nascionalidade= %s", nome, nascionalidade);
     }
 
     public Autor(String nome, String nascionalidade) {
