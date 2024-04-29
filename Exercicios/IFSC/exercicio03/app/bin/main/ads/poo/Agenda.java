@@ -18,7 +18,7 @@ public class Agenda {
 
     @Override
     public String toString() {
-        return "Agenda contatos=" + contatos;
+        return "Contatos da agenda= " + contatos;
     }
 
 }

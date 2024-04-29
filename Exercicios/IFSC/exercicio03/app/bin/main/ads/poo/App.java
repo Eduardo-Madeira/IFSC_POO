@@ -5,7 +5,7 @@ public class App {
     Scanner teclado;
 
     public App(){
-        this.bancoDeDados= new HashMap<>();
+        this.teclado = new Scanner(System.in);
     }
 
     // Menu principal

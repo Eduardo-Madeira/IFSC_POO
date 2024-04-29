@@ -10,13 +10,10 @@ public class Contato {
     private ArrayList<Telefone> telefones;
     private ArrayList<Email> emails;
     
-    public Contato(String nome, String sobrenome, LocalDate dataNasc, ArrayList<Telefone> telefones,
-            ArrayList<Email> emails) {
+    public Contato(String nome, String sobrenome, LocalDate dataNasc) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.dataNasc = dataNasc;
-        this.telefones = telefones;
-        this.emails = emails;
     }
     public String getNome() {
         return nome;
@@ -36,17 +33,11 @@ public class Contato {
     public void setDataNasc(LocalDate dataNasc) {
         this.dataNasc = dataNasc;
     }
-    public ArrayList<Telefone> getTelefones() {
-        return telefones;
-    }
     public void setTelefones(ArrayList<Telefone> telefones) {
-        this.telefones = telefones;
-    }
-    public ArrayList<Email> getEmails() {
-        return emails;
+        Telefone tele = new Telefone(rotulo, valor);
     }
     public void setEmails(ArrayList<Email> emails) {
-        this.emails = emails;
+        Email ema = new Email(rotulo, valor);
     }
 
     @Override
