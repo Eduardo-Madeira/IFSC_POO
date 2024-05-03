@@ -1,5 +1,7 @@
 package ads.poo;
 
+import java.time.LocalDate;
+
 public class Agenda {
     private Contato contato;
 
@@ -9,7 +11,12 @@ public class Agenda {
 
     @Override
     public String toString() {
-        return "Agenda: /n Contato = " + contato;
+        return "Agenda: /n Contatos = " + contato;
+    }
+
+    public boolean addContato(String nome, String sobrenome, LocalDate dataNasc){
+        contato = new Contato(nome, sobrenome, dataNasc);
+        return true;
     }
 
     // TODO como excluir de arraylist
